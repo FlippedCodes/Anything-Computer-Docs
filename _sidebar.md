@@ -1,4 +1,4 @@
-- **📌 Getting Started**
+<!-- - **📌 Getting Started**
   - [Setting up a server](/getting-started/setting-up-a-server.md)
   - [Connect with GIT](/getting-started/connect-with-git.md)
   - [How to change the version of your servers software.](/getting-started/how-to-change-the-version-of-your-servers-software..md)
@@ -12,9 +12,14 @@
   - [Java](/programm-your-bot/java.md)
   - [Node (JavaScript)](/programm-your-bot/node.md)
   - [Python](/programm-your-bot/python/README.md)
-    - [Advanced](/programm-your-bot/python/advanced.md)
+    - [Advanced](/programm-your-bot/python/advanced.md) -->
 - **📝 About the Wiki**
   - [Home](/README.md)
   - [License](/LICENSE.md)
-- **🔗 Official Links**
-  - [📝 Contribute](https://github.com/FlippedCodes/Anything-Computer-Docs)
+<!-- Currently no official links -->
+<!-- - **🔗 Official Links** -->
+  -   <!-- FIXME: Logo doesn't load on sub pages -->
+  <!-- - [![](../_media/website_logo.png ':size=19')Homepage](https://karlo-hosting.com/) -->
+  <!-- - [🌐 Homepage](https://karlo-hosting.com/)
+  - [![Logo](https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg ':size=17')Discord](https://discord.gg/HRZCYGSrta)
+  - [📝 Contribute](https://github.com/FlippedCodes/Anything-Computer-Docs) -->
