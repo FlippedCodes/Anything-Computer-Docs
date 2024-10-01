@@ -3,7 +3,7 @@
 function footerPlugin(hook, vm) {
   const footer = [
     '<footer style="text-align: center; padding-top: 40px;">',
-    'Karlo-Hosting &copy; 2024',
+    'FlippedCodes 2024',
     "<br/>",
     'Made with <span style="color: lightcoral">❤</span> by <a href="https://github.com/FlippedCodes/Anything-Computer-Docs" target="_blank">@FlippedCodes</a> and <a href="https://github.com/FlippedCodes/Anything-Computer-Docs/graphs/contributors" target="_blank">Helpers</a>',
     "</footer>",
