@@ -5,7 +5,7 @@ function footerPlugin(hook, vm) {
     '<footer style="text-align: center; padding-top: 40px;">',
     'Karlo-Hosting &copy; 2024',
     "<br/>",
-    'Made with <span style="color: lightcoral">❤</span> by <a href="https://github.com/Karlo-Hosting" target="_blank">@Karlo-Hosting</a> and <a href="https://github.com/Karlo-Hosting/Docs/graphs/contributors" target="_blank">Helpers</a>',
+    'Made with <span style="color: lightcoral">❤</span> by <a href="https://github.com/FlippedCodes/Anything-Computer-Docs" target="_blank">@FlippedCodes</a> and <a href="https://github.com/FlippedCodes/Anything-Computer-Docs/graphs/contributors" target="_blank">Helpers</a>',
     "</footer>",
   ].join("");
 
@@ -23,7 +23,7 @@ function footerPlugin(hook, vm) {
         .replace("@master", "/blob/master");
     } else {
       url =
-        "https://github.com/Karlo-Hosting/Docs/blob/main/" +
+        "https://github.com/FlippedCodes/Anything-Computer-Docs/blob/main/" +
         vm.route.file;
     }
     const editText = `\n<div style="text-align: right"><a href="${url}" target="_blank">📝 Edit on GitHub</a></div>`;

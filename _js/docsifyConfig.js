@@ -1,7 +1,7 @@
 window.$docsify = {
     catchPluginErrors: true,
     name: 'Karloline-Hosting Documentation',
-    repo: 'https://github.com/Karlo-Hosting/Docs/',
+    repo: 'https://github.com/FlippedCodes/Anything-Computer-Docs/',
     routerMode: 'histroy',
     auto2top: true,
     loadSidebar: true,
