@@ -10,7 +10,7 @@ window.$docsify = {
     toc: {
         tocMaxLevel: 3,
         target: 'h2, h3, h4, h5, h6',
-        ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+        ignoreHeaders: ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
     },
     tabs: {
         persist: true,
