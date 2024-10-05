@@ -1,6 +1,6 @@
 window.$docsify = {
     catchPluginErrors: true,
-    name: 'Karloline-Hosting Documentation',
+    name: 'Anything-Computer-Docs',
     repo: 'https://github.com/FlippedCodes/Anything-Computer-Docs/',
     routerMode: 'histroy',
     auto2top: true,
