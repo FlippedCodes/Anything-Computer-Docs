@@ -4,10 +4,10 @@ function footerPlugin(hook, vm) {
   const footer = [
     '<footer style="text-align: center; padding-top: 40px;">',
     'FlippedCodes 2024',
-    "<br/>",
+    '<br/>',
     'Made with <span style="color: lightcoral">❤</span> by <a href="https://github.com/FlippedCodes/Anything-Computer-Docs" target="_blank">@FlippedCodes</a> and <a href="https://github.com/FlippedCodes/Anything-Computer-Docs/graphs/contributors" target="_blank">Helpers</a>',
-    "</footer>",
-  ].join("");
+    '</footer>',
+  ].join('');
 
   hook.doneEach(() => {
     const html = document.querySelector('main section article');
@@ -15,15 +15,15 @@ function footerPlugin(hook, vm) {
     // if 3rd-Party articles are being used, fixup the link for the Edit button
     if (/githubusercontent\.com/.test(vm.route.file)) {
       url = vm.route.file
-        .replace("raw.githubusercontent.com", "github.com")
-        .replace(/\/master/, "/blob/master");
+        .replace('raw.githubusercontent.com', 'github.com')
+        .replace(/\/master/, '/blob/master');
     } else if (/jsdelivr\.net/.test(vm.route.file)) {
       url = vm.route.file
-        .replace("cdn.jsdelivr.net/gh", "github.com")
-        .replace("@master", "/blob/master");
+        .replace('cdn.jsdelivr.net/gh', 'github.com')
+        .replace('@master', '/blob/master');
     } else {
       url =
-        "https://github.com/FlippedCodes/Anything-Computer-Docs/blob/main/" +
+        'https://github.com/FlippedCodes/Anything-Computer-Docs/blob/main/' +
         vm.route.file;
     }
     const editText = `\n<div style="text-align: right"><a href="${url}" target="_blank">📝 Edit on GitHub</a></div>`;
