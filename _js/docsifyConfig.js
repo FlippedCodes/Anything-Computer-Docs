@@ -26,6 +26,11 @@ window.$docsify = {
         color: 'var(--accent)',
         height: '2px',
     },
+    nameLink: {
+        '/': '#/',
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md',
+    },
     'flexible-alerts': {
         important: {
             label: 'Important',
