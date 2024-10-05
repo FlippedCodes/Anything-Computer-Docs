@@ -18,7 +18,7 @@
   - [License](/LICENSE.md)
 <!-- Currently no official links -->
 <!-- - **🔗 Official Links** -->
-  -   <!-- FIXME: Logo doesn't load on sub pages -->
+  <!-- - FIXME: Logo doesn't load on sub pages -->
   <!-- - [![](../_media/website_logo.png ':size=19')Homepage](https://karlo-hosting.com/) -->
   <!-- - [🌐 Homepage](https://karlo-hosting.com/)
   - [![Logo](https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg ':size=17')Discord](https://discord.gg/HRZCYGSrta)
