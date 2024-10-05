@@ -17,6 +17,15 @@ Logo:
     brightness(80%);
 }
 
+/* 
+Edit Pencil:
+  Color
+*/
+
+.edit-page {
+  fill: var(--base-color);
+}
+
 /*
 Search:
   fix clear button location
