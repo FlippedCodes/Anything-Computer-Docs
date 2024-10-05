@@ -5,7 +5,7 @@ window.$docsify = {
     routerMode: 'histroy',
     auto2top: true,
     loadSidebar: true,
-    logo: './_media/logo.png', // gets converted with css for dark mode
+    // logo: './_media/logo.png', // gets converted with css for dark mode
     formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
     toc: {
         tocMaxLevel: 3,
