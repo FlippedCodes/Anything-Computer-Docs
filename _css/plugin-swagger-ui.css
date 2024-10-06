@@ -35,7 +35,9 @@ span.schemes-title,
 .swagger-ui .tab li,
 .swagger-ui .response-col_status,
 .swagger-ui .responses-inner h5,
-.swagger-ui .responses-inner h4
+.swagger-ui .responses-inner h4,
+.swagger-ui .errors-wrapper .errors h4,
+.swagger-ui .errors-wrapper hgroup h4
 {
   color: var(--base-color) !important;
 }
