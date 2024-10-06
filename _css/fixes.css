@@ -152,6 +152,20 @@ Image:
   filter: unset;
 }
 
+/* 
+Image Caption
+  remove top margin
+  italic
+  line height
+*/
+
+.image-caption {
+  margin-top: 0em !important;
+  margin-bottom: 2em !important;
+  font-style: italic;
+  line-height: 1em;
+}
+
 /*
 Table
  drop shadow
