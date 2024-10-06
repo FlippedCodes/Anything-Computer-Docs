@@ -5,7 +5,7 @@ function swaggerUiPlugin(hook, vm) {
     const html = document.querySelector('main section article');
     const link = document.querySelector('p a');
     // test if link is a swagger link
-    if (link.textContent !== 'swagger') return;
+    if (link && link.textContent !== 'swagger') return;
 
     // create swagger script tag
     const swaggerScript = document.createElement('script');
