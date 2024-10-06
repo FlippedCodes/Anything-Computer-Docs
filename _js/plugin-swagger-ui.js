@@ -14,13 +14,13 @@ function swaggerUiPlugin(hook, vm) {
     const cssLinks = [
       '/_css/plugin-swagger-ui.css',
       'https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css'
-    ]
+    ];
     cssLinks.forEach((cssLink) => {
       const swaggerCss = document.createElement('link');
       swaggerCss.rel = 'stylesheet';
       swaggerCss.href = cssLink;
       document.head.prepend(swaggerCss);
-    })
+    });
 
     // create place for swagger to populate and delete link
     const swaggerContentDiv = document.createElement('div');
