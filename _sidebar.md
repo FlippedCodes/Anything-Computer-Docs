@@ -13,6 +13,7 @@
   - [Node (JavaScript)](/programm-your-bot/node.md)
   - [Python](/programm-your-bot/python/README.md)
     - [Advanced](/programm-your-bot/python/advanced.md) -->
+- [Swagger API Test](/test.md)
 - **Appliance**
   - [Aruba HP Switch](/APPLIANCE/Aruba%20HP%20Switch.md)
 - **Operating Systems**
