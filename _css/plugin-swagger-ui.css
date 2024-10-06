@@ -3,6 +3,19 @@
 }
 
 /*
+More space
+*/
+
+.markdown-section {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+section.content {
+  padding-right: 0px !important;
+}
+
+/*
 Text
   Font
   Color
