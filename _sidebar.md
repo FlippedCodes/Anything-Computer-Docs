@@ -13,6 +13,11 @@
   - [Node (JavaScript)](/programm-your-bot/node.md)
   - [Python](/programm-your-bot/python/README.md)
     - [Advanced](/programm-your-bot/python/advanced.md) -->
+- **Appliance**
+  - [Aruba HP Switch](/APPLIANCE/Aruba%20HP%20Switch.md)
+- **Operating Systems**
+  - Windows
+    - [Networking](/OS/Windows/networking.md)
 - **📝 About the Wiki**
   - [Home](/README.md)
   - [License](/LICENSE.md)
