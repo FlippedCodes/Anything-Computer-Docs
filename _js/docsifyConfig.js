@@ -26,10 +26,12 @@ window.$docsify = {
         color: 'var(--accent)',
         height: '2px',
     },
-    nameLink: {
-        '/': '#/',
+    alias: {
         '/.*/_sidebar.md': '/_sidebar.md',
         '/.*/_navbar.md': '/_navbar.md',
+    },
+    nameLink: {
+        '/': '#/',
     },
     'flexible-alerts': {
         important: {
