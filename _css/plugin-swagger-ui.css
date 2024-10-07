@@ -23,6 +23,7 @@ Text
 */
 
 .swagger-ui,
+.swagger-ui p,
 .opblock-summary-path,
 .opblock-summary-description,
 .swagger-ui .opblock .opblock-summary-path__deprecated,
