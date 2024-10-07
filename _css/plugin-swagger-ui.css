@@ -55,6 +55,10 @@ span.schemes-title,
   color: var(--base-color) !important;
 }
 
+.markdown-section h4:first-child {
+  color: var(--notice-warning-color) !important;
+}
+
 pre.base-url {
   margin: var(--code-inline-margin);
   padding: var(--code-inline-padding);
@@ -70,7 +74,8 @@ pre.base-url {
 .swagger-ui .info a,
 .swagger-ui .info a:hover,
 .swagger-ui .scopes h2 a,
-.swagger-ui .dialog-ux .modal-ux-content p
+.swagger-ui .dialog-ux .modal-ux-content p,
+.swagger-ui .info hgroup.main a
 {
   font-size: var(--base-font-size);
 }
@@ -141,6 +146,7 @@ Auth Modal
 .swagger-ui .checkbox input[type="checkbox"] + label > .item,
 .swagger-ui input[disabled],
 .swagger-ui input[type="text"]:not(.invalid),
+.swagger-ui input[type="file"],
 .swagger-ui textarea {
   background-color: var(--sidebar-background) !important;
   border: unset;
