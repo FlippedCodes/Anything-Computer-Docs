@@ -1,16 +1,16 @@
 // code inspiration from https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/installation.md#unpkg
 function swaggerUiPlugin(hook, vm) {
   hook.doneEach(() => {
-    // get dom
+    // get dom and set info
     const html = document.querySelector('main section article');
-    const link = document.querySelector('p a');
+    const linkElement = document.querySelector('p a');
     const swaggerScriptUrl = 'https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js'
     const cssLinks = [
       '/_css/plugin-swagger-ui.css',
       'https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css'
     ];
     // test if link is a swagger link
-    if (!(link && link.textContent === 'swagger')) {
+    if (!(linkElement && linkElement.textContent === 'swagger')) {
       cssLinks.forEach((cssLink) => {
         const foundCss = document.head.querySelector(`[href='${cssLink}']`);
         if (foundCss) foundCss.remove();
@@ -35,12 +35,16 @@ function swaggerUiPlugin(hook, vm) {
     const swaggerContentDiv = document.createElement('div');
     swaggerContentDiv.id = 'swagger-ui';
     html.appendChild(swaggerContentDiv);
-    link.remove();
+    linkElement.remove();
+
+    // remove "#/" if local link. 
+    const baseURL = linkElement.baseURI.split('/#')[0];
+    const linkParsed = linkElement.href.includes(baseURL) ? linkElement.href.replace('#/', '') : linkElement.href;
 
     // create hook and wait for script load 
     swaggerScript.onload = () => {
       document = SwaggerUIBundle({
-        url: link.href,
+        url: linkParsed,
         dom_id: '#swagger-ui',
       });
     };
