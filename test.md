@@ -1,1 +1,1 @@
-[swagger](//petstore.swagger.io/v2/swagger.json)
+[swagger](https://snipe-it.readme.io/openapi/6606cda76f018b002350c785)
