@@ -22,7 +22,7 @@ Text
   size
 */
 
-.swagger-ui p,
+.swagger-ui,
 .opblock-summary-path,
 .opblock-summary-description,
 .swagger-ui .opblock .opblock-summary-path__deprecated,
@@ -50,7 +50,8 @@ span.schemes-title,
 .swagger-ui .responses-inner h5,
 .swagger-ui .responses-inner h4,
 .swagger-ui .errors-wrapper .errors h4,
-.swagger-ui .errors-wrapper hgroup h4
+.swagger-ui .errors-wrapper hgroup h4,
+.loading::after
 {
   color: var(--base-color) !important;
 }
