@@ -52,7 +52,8 @@ span.schemes-title,
 .swagger-ui .responses-inner h4,
 .swagger-ui .errors-wrapper .errors h4,
 .swagger-ui .errors-wrapper hgroup h4,
-.loading::after
+.loading::after,
+.swagger-ui [class*="__title"]
 {
   color: var(--base-color) !important;
 }
