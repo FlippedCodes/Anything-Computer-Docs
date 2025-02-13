@@ -14,9 +14,7 @@
   - [Python](/programm-your-bot/python/README.md)
     - [Advanced](/programm-your-bot/python/advanced.md) -->
 - [Swagger API Test](/test.md)
-- **Appliance**
-  - [Aruba HP Switch](/APPLIANCE/Aruba%20HP%20Switch.md)
-- **Operating Systems**
+  - [Aruba HP Switch](/APPLIANCE/Aruba-HP-Switch.md)
   - Windows
     - [Networking](/OS/Windows/networking.md)
 - **📝 About the Wiki**
