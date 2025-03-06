@@ -1,0 +1,16 @@
+<canvas>
+  <scroll>
+    <text fontsize="30">Hello, this is a piece of text 1</text>
+    <text fontsize="30">Hello, this is a piece of text 2</text>
+    <text fontsize="30">Hello, this is a piece of text 3</text>
+    <text fontsize="30">Hello, this is a piece of text 4</text>
+    <text fontsize="30">Hello, this is a piece of text 5</text>
+    <text fontsize="30">Hello, this is a piece of text 6</text>
+    <text fontsize="30">Hello, this is a piece of text 7</text>
+    <text fontsize="30">Hello, this is a piece of text 8</text>
+    <text fontsize="30">Hello, this is a piece of text 9</text>
+    <text fontsize="30">Hello, this is a piece of text 10</text>
+    <text fontsize="30">Hello, this is a piece of text 11</text>
+    <text fontsize="30">Hello, this is a piece of text 12</text>
+  </scroll>
+</canvas>
