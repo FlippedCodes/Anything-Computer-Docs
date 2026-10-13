@@ -35,11 +35,10 @@ jobs:
         run: bun ci --frozen-lockfile --prod
       - name: Sidebar Generator
         id: processor
-        uses: FlippedCodes/docsify-sidebar-generator@v1.0.1
+        uses: FlippedCodes/docsify-sidebar-generator@1.0.1
         with:
-          source_directory: './' 
-          # Pass the required output path
-          sidebar_output_path: './sidebar.md' 
+          source_directory: './'
+          output_file_path: './sidebar.md'
       - name: Commit and Push Generated File
         # The custom action should save the file to the workspace's 'docs/' directory.
         # If the action doesn't save it, you might need to capture it via artifacts and restore it here.
