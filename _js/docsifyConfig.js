@@ -20,11 +20,6 @@ window.$docsify = {
     },
     // Search config https://github.com/docsifyjs/docsify/blob/141ac96add9892fcb345551906770c4e9b2265b0/docs/index.html#L105
     search: 'auto',
-    progress: {
-        position: 'top',
-        color: 'var(--accent)',
-        height: '2px',
-    },
     alias: {
         '/.*/_sidebar.md': '/_sidebar.md',
         '/.*/_navbar.md': '/_navbar.md',
