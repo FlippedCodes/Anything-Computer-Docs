@@ -2,7 +2,6 @@ window.$docsify = {
     catchPluginErrors: true,
     name: 'Anything-Computer-Docs',
     repo: 'https://github.com/FlippedCodes/Anything-Computer-Docs/',
-    routerMode: 'histroy',
     auto2top: true,
     loadSidebar: true,
     // logo: './_media/logo.png', // gets converted with css for dark mode
