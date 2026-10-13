@@ -29,10 +29,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-      - name: Install Dependencies
-        run: bun ci --frozen-lockfile --prod
+      # - name: Setup Bun
+      #   uses: oven-sh/setup-bun@v2
       - name: Sidebar Generator
         id: processor
         uses: FlippedCodes/docsify-sidebar-generator@1.0.2
