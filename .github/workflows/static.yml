@@ -35,7 +35,7 @@ jobs:
         run: bun ci --frozen-lockfile --prod
       - name: Sidebar Generator
         id: processor
-        uses: FlippedCodes/docsify-sidebar-generator@1.0.1
+        uses: FlippedCodes/docsify-sidebar-generator@1.0.2
         with:
           source_directory: './'
           output_file_path: './sidebar.md'
