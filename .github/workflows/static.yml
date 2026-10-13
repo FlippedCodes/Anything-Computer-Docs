@@ -11,7 +11,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -22,6 +22,50 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  generateSidebar:
+    runs-on: ubuntu-latest
+    name: Generate Sidebar
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Install Dependencies
+        run: bun ci --frozen-lockfile --prod
+      - name: Sidebar Generator
+        id: processor
+        uses: FlippedCodes/docsify-sidebar-generator@v1.0.1
+        with:
+          source_directory: './' 
+          # Pass the required output path
+          sidebar_output_path: './sidebar.md' 
+      - name: Commit and Push Generated File
+        # The custom action should save the file to the workspace's 'docs/' directory.
+        # If the action doesn't save it, you might need to capture it via artifacts and restore it here.
+        run: |
+          echo "--- Committing sidebar.md to the repository ---"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Stage the file
+          git add ./sidebar.md
+          
+          # Check if the file is actually new or changed before committing
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "🤖 CI: Auto-generated Docsify sidebar.md"
+            git push
+          else
+            echo "Sidebar file unchanged. Skipping commit."
+          fi
+          
+      # 4. Upload the Artifact (Optional, but good for logging)
+      # - name: Upload Processed Artifact
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: processed-docs
+      #     path: /
+
   # Single deploy job since we're just deploying
   deploy:
     environment:
