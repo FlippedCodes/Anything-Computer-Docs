@@ -33,24 +33,24 @@ jobs:
       #   uses: oven-sh/setup-bun@v2
       - name: Sidebar Generator
         id: processor
-        uses: FlippedCodes/docsify-sidebar-generator@0d30557eeb7e3e05bcd461bc5321a3fa348b216b
+        uses: FlippedCodes/docsify-sidebar-generator@b89b8b805a8a82bf0ff181cdcb5860c337b50a98
         with:
           source_directory: './'
-          output_file_path: './sidebar.md'
+          output_file_path: './_sidebar.md'
       - name: Commit and Push Generated File
         # The custom action should save the file to the workspace's 'docs/' directory.
         # If the action doesn't save it, you might need to capture it via artifacts and restore it here.
         run: |
-          echo "--- Committing sidebar.md to the repository ---"
+          echo "--- Committing _sidebar.md to the repository ---"
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
           # Stage the file
-          git add ./sidebar.md
+          git add ./_sidebar.md
           
           # Check if the file is actually new or changed before committing
           if ! git diff-index --quiet HEAD --; then
-            git commit -m "🤖 CI: Auto-generated Docsify sidebar.md"
+            git commit -m "🤖 CI: Auto-generated Docsify _sidebar.md"
             git push
           else
             echo "Sidebar file unchanged. Skipping commit."
