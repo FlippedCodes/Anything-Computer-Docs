@@ -35,7 +35,7 @@ jobs:
         id: processor
         uses: FlippedCodes/docsify-sidebar-generator@b8e0aa31a9f8c1a385e31d1c00f7b7792167b9e6
         with:
-          source_directory: './'
+          source_directory: '.'
           output_file_path: './_sidebar.md'
       - name: Commit and Push Generated File
         # The custom action should save the file to the workspace's 'docs/' directory.
