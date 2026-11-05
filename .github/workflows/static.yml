@@ -33,7 +33,7 @@ jobs:
       #   uses: oven-sh/setup-bun@v2
       - name: Sidebar Generator
         id: processor
-        uses: FlippedCodes/docsify-sidebar-generator@b8e0aa31a9f8c1a385e31d1c00f7b7792167b9e6
+        uses: FlippedCodes/docsify-sidebar-generator@73e45536bf0e0177761378403048a92057021e0d
         with:
           source_directory: '.'
           output_file_path: './_sidebar.md'
