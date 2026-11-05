@@ -1,7 +1,8 @@
 - **📟 Appliance**
   - [Aruba HP Switch](APPLIANCE/Aruba-HP-Switch.md)
 - **🪟 Operating Systems**
-- Windows
+  - Windows
+    - [Networking](OS/Windows/networking.md)
 - **🔗 Links**
   - [📝 Contribute](https://github.com/FlippedCodes/Anything-Computer-Docs)
   - [📄 Licenses](/LICENSE.md)
