@@ -4,7 +4,7 @@
 - APPLICATION
   - Games
     - Resonite
-      - [Swaggon Avatar](APPLICATION/Games/Resonite/Swaggon Avatar.md)
+      - [Swaggon Avatar](APPLICATION/Games/Resonite/swaggonAvatar.md)
 - **🪟 Operating Systems**
   - Windows
     - [Networking](OS/Windows/networking.md)
