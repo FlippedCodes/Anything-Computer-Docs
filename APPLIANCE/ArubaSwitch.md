@@ -60,5 +60,5 @@
 1. disable 802.1X authentication on the port: `no aaa port-access authenticator PORTNUMBER`
 1. Exit configuration mode: `end`
 1. Save the configuration: `wr mem`
-   1. 
+
 <!-- tabs:end -->
