@@ -1,5 +1,10 @@
 - **📟 Appliance**
-  - [Aruba HP Switch](APPLIANCE/Aruba-HP-Switch.md)
+  - [Aruba Switch](APPLIANCE/ArubaSwitch.md)
+  - [TrueNAS](APPLIANCE/TrueNAS.md)
+- APPLICATION
+  - Games
+    - Resonite
+      - [Swaggon Avatar](APPLICATION/Games/Resonite/Swaggon Avatar.md)
 - **🪟 Operating Systems**
   - Windows
     - [Networking](OS/Windows/networking.md)
