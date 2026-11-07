@@ -1,4 +1,4 @@
-# Aruba HP Switch
+# Aruba Switch
 
 [Source article (German)](https://sysadms.de/2018/10/16/aruba-switches-fuer-802-1x-authentifizierung-konfigurieren/)
 
