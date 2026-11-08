@@ -1,7 +1,8 @@
 - **📟 Appliance**
-  - [Aruba Switch](APPLIANCE/ArubaSwitch.md)
-  - [TrueNAS](APPLIANCE/TrueNAS.md)
-- APPLICATION
+  - [Aruba Switch](APPLIANCE/arubaSwitch.md)
+  - [SecurePoint](APPLIANCE/securepoint.md)
+  - [TrueNAS](APPLIANCE/trueNAS.md)
+- **⚙️ Applications**
   - Games
     - Resonite
       - [Swaggon Avatar](APPLICATION/Games/Resonite/swaggonAvatar.md)
