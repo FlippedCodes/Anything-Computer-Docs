@@ -7,6 +7,8 @@
     - Resonite
       - [Swaggon Avatar](APPLICATION/Games/Resonite/swaggonAvatar.md)
 - **🪟 Operating Systems**
+  - Linux
+    - [ZFS](OS/Linux/zfs.md)
   - Windows
     - [Networking](OS/Windows/networking.md)
 - **🔗 Links**
