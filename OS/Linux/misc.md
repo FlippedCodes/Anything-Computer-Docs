@@ -1,4 +1,4 @@
-# **Linux**
+# Miscellaneous
 
 ## Cheat Sheet-Commands
 
