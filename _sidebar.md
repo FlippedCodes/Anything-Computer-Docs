@@ -5,9 +5,11 @@
 - **⚙️ Applications**
   - Games
     - Resonite
-      - [Swaggon Avatar](APPLICATION/Games/Resonite/swaggonAvatar.md)
+      - [swaggonAvatar](APPLICATION/Games/Resonite/swaggonAvatar.md)
+      - [winterboldAvatar](APPLICATION/Games/Resonite/winterboldAvatar.md)
 - **🪟 Operating Systems**
   - Linux
+    - [Ubuntu](OS/Linux/ubuntu.md)
     - [ZFS](OS/Linux/zfs.md)
   - Windows
     - [Networking](OS/Windows/networking.md)
