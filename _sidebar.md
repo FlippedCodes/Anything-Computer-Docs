@@ -8,7 +8,8 @@
       - [Swaggon Avatar](APPLICATION/Games/Resonite/swaggon-avatar.md)
       - [Winterbold Avatar](APPLICATION/Games/Resonite/winterbold-avatar.md)
 - **🪟 Operating Systems**
-  - **Linux**
+  - Linux
+    - [Miscellaneous](OS/Linux/misc.md)
     - [Software Raid](OS/Linux/software-raid.md)
   - Windows
     - [Networking](OS/Windows/networking.md)
