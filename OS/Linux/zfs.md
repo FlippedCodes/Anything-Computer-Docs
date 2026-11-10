@@ -8,8 +8,8 @@
 
 ### Faulted drive
 
-```
-$ zpool status
+```bash
+zpool status
   pool: rpool
  state: DEGRADED
 status: One or more devices are faulted in response to persistent errors.
