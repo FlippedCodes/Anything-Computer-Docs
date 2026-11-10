@@ -1,6 +1,6 @@
-<!-- markdownlint-disable MD033 -->
-
 # Swaggon Avatar
+
+<!-- markdownlint-disable MD033 -->
 
 <!-- panels:start -->
 
