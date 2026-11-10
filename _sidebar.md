@@ -9,8 +9,7 @@
       - [Winterbold Avatar](APPLICATION/Games/Resonite/winterbold-avatar.md)
 - **🪟 Operating Systems**
   - Linux
-    - [ubuntu](OS/Linux/ubuntu.md)
-    - [ZFS](OS/Linux/zfs.md)
+    - [Software Raid](OS/Linux/software-raid.md)
   - Windows
     - [Networking](OS/Windows/networking.md)
 - **🔗 Links**
