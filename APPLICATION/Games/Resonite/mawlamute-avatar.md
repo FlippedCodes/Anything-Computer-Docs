@@ -106,12 +106,12 @@ These blendshapes trigger custom effects on the avatar. These variables are only
 - <span class="type type-float">float</span> `Avatar/Tail.WagSpeed`
 - <span class="type type-float">float</span> `Avatar/Tail.Puppet` The direction is is being dragged
 - <span class="type type-bool">bool</span> `Avatar/Tail.Puppet` If puppeting is enabled
-- ◂ <span class="type type-floatQ">floatQ</span> `Avatar/Tail.Rotation`
+- `◂` <span class="type type-floatQ">floatQ</span> `Avatar/Tail.Rotation`
 
 #### Toes
 
-- ◂ <span class="type type-float">float</span> `Avatar/Toes.Curl.Left`
-- ◂ <span class="type type-float">float</span> `Avatar/Toes.Curl.Right`
+- `◂` <span class="type type-float">float</span> `Avatar/Toes.Curl.Left`
+- `◂` <span class="type type-float">float</span> `Avatar/Toes.Curl.Right`
 - <span class="type type-bool">bool</span> `Avatar/Toes.Puppet` If puppeting is enabled
 
 #### Ears
@@ -119,10 +119,10 @@ These blendshapes trigger custom effects on the avatar. These variables are only
 - <span class="type type-bool">bool</span> `Avatar/Ears.Puppet`
 - <span class="type type-float">float</span> `Avatar/Ears.Deflect` The total target sideways movement of the ears
 - <span class="type type-float">float</span> `Avatar/Ears.Back` The total target backwards movement of the ears
-- ◂ <span class="type type-float">float</span> `Avatar/Ears.Deflect.Left` The actual sideways movement on the left side
-- ◂ <span class="type type-float">float</span> `Avatar/Ears.Back.Left` The actual backwards movement on the left side
-- ◂ <span class="type type-float">float</span> `Avatar/Ears.Deflect.Right` The actual sideways movement on the right side
-- ◂ <span class="type type-float">float</span> `Avatar/Ears.Back.Right`
+- `◂` <span class="type type-float">float</span> `Avatar/Ears.Deflect.Left` The actual sideways movement on the left side
+- `◂` <span class="type type-float">float</span> `Avatar/Ears.Back.Left` The actual backwards movement on the left side
+- `◂` <span class="type type-float">float</span> `Avatar/Ears.Deflect.Right` The actual sideways movement on the right side
+- `◂` <span class="type type-float">float</span> `Avatar/Ears.Back.Right`
   - The actual backwards movement on the right side. The ear directions also have an overwrite variant that is driven by the expression manager. The is combined with the total values and then sent back to the avatar by the sided values.
 
 #### Headpats
@@ -148,16 +148,16 @@ These blendshapes trigger custom effects on the avatar. These variables are only
 #### Tongue
 
 - <span class="type type-bool">bool</span>`Avatar/Tongue.Puppet`
-- ◂ <span class="type type-bool">bool</span> `Avatar/Tongue.Phyiscs`
-- ◂ <span class="type type-float">float</span> `Avatar/Tongue.Out`
-- ◂ <span class="type type-floatQ">floatQ</span> `Avatar/Tongue.Puppet` The actual rotation of the tongue bone
+- `◂` <span class="type type-bool">bool</span> `Avatar/Tongue.Phyiscs`
+- `◂` <span class="type type-float">float</span> `Avatar/Tongue.Out`
+- `◂` <span class="type type-floatQ">floatQ</span> `Avatar/Tongue.Puppet` The actual rotation of the tongue bone
 
 #### Body
 
-- ◂ <span class="type type-bool">bool</span> `Avatar/DynamicBoneChain.Butt.Enabled`
-- ◂ <span class="type type-bool">bool</span> `Avatar/DynamicBoneChain.Breasts.Enabled`
-- ◂ <span class="type type-colorX">colorX</span> `Avatar/Material.Fur.EmissiveColor`
-- ◂ <span class="type type-colorX">colorX</span> `Avatar/Material.Misc.EmissiveColor`
+- `◂` <span class="type type-bool">bool</span> `Avatar/DynamicBoneChain.Butt.Enabled`
+- `◂` <span class="type type-bool">bool</span> `Avatar/DynamicBoneChain.Breasts.Enabled`
+- `◂` <span class="type type-colorX">colorX</span> `Avatar/Material.Fur.EmissiveColor`
+- `◂` <span class="type type-colorX">colorX</span> `Avatar/Material.Misc.EmissiveColor`
 
 #### Clothing
 
