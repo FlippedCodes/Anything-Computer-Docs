@@ -5,6 +5,7 @@
 - **⚙️ Applications**
   - Games
     - Resonite
+      - [Mawlamute Avatar](APPLICATION/Games/Resonite/mawlamute-avatar.md)
       - [Swaggon Avatar](APPLICATION/Games/Resonite/swaggon-avatar.md)
       - [Winterbold Avatar](APPLICATION/Games/Resonite/winterbold-avatar.md)
 - **🪟 Operating Systems**
