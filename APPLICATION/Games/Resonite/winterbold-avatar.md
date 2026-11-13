@@ -17,8 +17,12 @@
 
 <!-- div:left-panel -->
 
+<!-- embed:start:CommunityPortNotice -->
+
 > [!Note]
 > This is a community port to Resonite. **Do not contact Guusy for technical support**, as they will be unable to help you with your issue. If you find any bugs or inconsistencies, please reach out to AxiomWolf(`@unskilledwolf`) on Discord.
+
+<!-- embed:end:CommunityPortNotice -->
 
 <!-- panels:end -->
 
@@ -57,7 +61,7 @@ The Winterbold Core add-on comes pre-installed with the avatar and is fully cust
 
 #### VR Controls
 
-![Winterbold VR Controls](_media/winterbold-expressions.png)
+![Winterbold VR Controls](_media/winterbold-expression-sheet.png)
 
 <!-- div:right-panel -->
 
