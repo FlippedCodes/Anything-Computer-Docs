@@ -28,7 +28,7 @@
 
 ### Basic Setup
 
-To start using the Winterbold right away without any customizations, hold the "Finish Avatar" button. Thats it!
+To start using the Mawlamute right away without any customizations, hold the "Finish Avatar" button. Thats it!
 
 ### Custom Textures
 
@@ -41,7 +41,7 @@ On Desktop, you need to laser-grab with holding left-click and right-click on th
 
 ### Core Add-On
 
-The Winterbold Core add-on comes pre-installed with the avatar and is fully customizable through the context menu. This allows for expressions, based on the VRC hand-gestures and community made addons.
+The Mawlamute Core add-on comes pre-installed with the avatar and is fully customizable through the context menu. This allows for expressions, based on the VRC hand-gestures and community made addons.
 
 ### Improving Avatar Performance
 
@@ -92,10 +92,6 @@ Most expression and personalization functionality is self-contained in the Core 
 
 To overwrite an eye to open in the EyeManager, use the following variables. Using these instead of Blendshapes fixes for "double blinking" where multiple eyes closed blendshapes are active at once.
 
-- <span class="type type-float">float</span> `Avatar/EyeManager.EyeCloseOverride.Left`
-- <span class="type type-float">float</span> `Avatar/EyeManager.EyeCloseOverride.Right`
-- <span class="type type-bool">bool</span> `Avatar/EyeManager.DisableBlinking`
-- <span class="type type-string">string</span> `Avatar/version`
 
 ### Avatar Specific Variables
 
@@ -103,116 +99,139 @@ These blendshapes trigger custom effects on the avatar. These variables are only
 
 #### Tail
 
-- <span class="type type-float">float</span> `Avatar/Tail.WagSpeed`
-- <span class="type type-float">float</span> `Avatar/Tail.Puppet` The direction is is being dragged
-- <span class="type type-bool">bool</span> `Avatar/Tail.Puppet` If puppeting is enabled
-- `◂` <span class="type type-floatQ">floatQ</span> `Avatar/Tail.Rotation`
 
 #### Toes
 
-- `◂` <span class="type type-float">float</span> `Avatar/Toes.Curl.Left`
-- `◂` <span class="type type-float">float</span> `Avatar/Toes.Curl.Right`
-- <span class="type type-bool">bool</span> `Avatar/Toes.Puppet` If puppeting is enabled
 
 #### Ears
 
-- <span class="type type-bool">bool</span> `Avatar/Ears.Puppet`
-- <span class="type type-float">float</span> `Avatar/Ears.Deflect` The total target sideways movement of the ears
-- <span class="type type-float">float</span> `Avatar/Ears.Back` The total target backwards movement of the ears
-- `◂` <span class="type type-float">float</span> `Avatar/Ears.Deflect.Left` The actual sideways movement on the left side
-- `◂` <span class="type type-float">float</span> `Avatar/Ears.Back.Left` The actual backwards movement on the left side
-- `◂` <span class="type type-float">float</span> `Avatar/Ears.Deflect.Right` The actual sideways movement on the right side
-- `◂` <span class="type type-float">float</span> `Avatar/Ears.Back.Right`
-  - The actual backwards movement on the right side. The ear directions also have an overwrite variant that is driven by the expression manager. The is combined with the total values and then sent back to the avatar by the sided values.
 
 #### Headpats
 
-- <span class="type type-bool">bool</span> `Avatar/Headpats.LocalTrigger` If the local user is triggering the headpats
-- <span class="type type-bool">bool</span> `Avatar/Headpats.Sound.Enabled`
-- <span class="type type-bool">bool</span> `Avatar/Headpats.Trigger` If any user is headpatting
-- <span class="type type-bool">bool</span> `Avatar/Headpats.Enabled` If the headpats are enabled
 
 #### Eyes
 
-- <span class="type type-bool">bool</span> `Avatar/EyePoking.Enabled`
-- <span class="type type-int">int</span> `Avatar/Eyes.Pupil.Type`
-- <span class="type type-bool">bool</span> `Avatar/Eyes.DisableBlinking` If blinking is toggled off on the avatar (combined with expressions and set to the EyeManager's variable)
 
 #### Expressions
 
-- <span class="type type-bool">bool</span> `Avatar/Expressions.Locked.Mouth`
-- <span class="type type-bool">bool</span> `Avatar/Expressions.Locked.Eyes`
-- <span class="type type-bool">bool</span> `Avatar/Expressions.Disabled.Mouth`
-- <span class="type type-bool">bool</span> `Avatar/Expressions.Disabled.Eyes`
 
 #### Tongue
 
-- <span class="type type-bool">bool</span>`Avatar/Tongue.Puppet`
-- `◂` <span class="type type-bool">bool</span> `Avatar/Tongue.Phyiscs`
-- `◂` <span class="type type-float">float</span> `Avatar/Tongue.Out`
-- `◂` <span class="type type-floatQ">floatQ</span> `Avatar/Tongue.Puppet` The actual rotation of the tongue bone
 
 #### Body
 
-- `◂` <span class="type type-bool">bool</span> `Avatar/DynamicBoneChain.Butt.Enabled`
-- `◂` <span class="type type-bool">bool</span> `Avatar/DynamicBoneChain.Breasts.Enabled`
-- `◂` <span class="type type-colorX">colorX</span> `Avatar/Material.Fur.EmissiveColor`
-- `◂` <span class="type type-colorX">colorX</span> `Avatar/Material.Misc.EmissiveColor`
 
 #### Clothing
 
-- <span class="type type-bool">bool</span> `Avatar/BaseClothes.WearMittens`
 
 ### Blendshapes
 
 Only a subset of Blendshapes are available as dynamic variables. The rest can be either reserved or baked for performance. Keep in mind that some may be used in the future for clothes compatibility.
 
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Body_Breasts`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Body_Feminine`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.FingerClaws_Retract`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.ToeClaws_Retract`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Teeth_Sharp`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Teeth_Fangs`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Eyelashes_Feminine`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Jaw_Open`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Mouth_Smile.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Mouth_Smile.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Mouth_Blep`
-- ~~<span class="type type-float">float</span> `Avatar/Blendshape.Tongue_Out`~~ Use Avatar/Tongue.Out for dynamic bone compatibility.
-- <span class="type type-float">float</span> `Avatar/Blendshape.Mouth_Frown.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Mouth_Frown.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Mouth_Puff.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Mouth_Puff.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Raised.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Raised.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyes_Wide.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyes_Wide.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyes_HappyClosed.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyes_HappyClosed.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Lowered.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Lowered.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Cross.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Cross.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Nose_Scrunch.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Nose_Scrunch.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Pupils_Small`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Drooped.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyebrows_Drooped.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyes_LowerRaise.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Eyes_LowerRaise.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Lips_Pull.L`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Lips_Pull.R`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Show_Tears`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Show_Blush`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Pupils_Wide`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Pupils_Slit`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Pupils_Goat`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Pupils_Heart`
-- <span class="type type-float">float</span> `Avatar/Blendshape.Pupils_Star`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Ears_Notched`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Hide_BaseClothes_Charms`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Hide_BaseClothes_WaistHoodie`
-- <span class="type type-bool">bool</span> `Avatar/Blendshape.Hide_BaseClothes_Warmers`
+- <span class="type type-bool">bool</span> `CheekSquish.Enabled`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Boots`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Boots`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Jacket`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Jacket`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Leggings`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Leggings`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Shorts`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Shorts`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Stockings`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Stockings`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Undershirt`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Undershirt`
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Breasts.Enabled`
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Butt.Enabled`
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Toes.Enabled`
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Tummy.Enabled`
+- <span class="type type-float">float</span> `Emote.Ear.Back.L`
+- <span class="type type-float">float</span> `Emote.Ear.Back.R`
+- <span class="type type-float">float</span> `Emote.Ear.Deflect.L`
+- <span class="type type-float">float</span> `Emote.Ear.Deflect.R`
+- <span class="type type-float">float</span> `Emote.Tongue`
+- <span class="type type-bool">bool</span> `Expression.Active`
+- <span class="type type-float">float?</span> `Expression.LightconeTarget`
+- <span class="type type-bool">bool</span> `Expressions.DoOpenHandExpressions`
+- <span class="type type-bool">bool</span> `Expressions.Eyes.Enable`
+- <span class="type type-bool">bool</span> `Expressions.Eyes.Lock`
+- <span class="type type-bool">bool</span> `Expressions.Mouth.DoOpenHandExpressions`
+- <span class="type type-bool">bool</span> `Expressions.Mouth.Enable`
+- <span class="type type-bool">bool</span> `Expressions.Mouth.Lock`
+- <span class="type type-bool">bool</span> `EyeManager.DisableBlinking`
+- <span class="type type-float">float</span> `EyeManager.EyeCloseOverride.Left`
+- <span class="type type-float">float</span> `EyeManager.EyeCloseOverride.Right`
+- <span class="type type-float">float</span> `EyeManager.EyesClosed.Left.Result`
+- <span class="type type-float">float</span> `EyeManager.EyesClosed.Right.Result`
+- <span class="type type-bool">bool</span> `EyePoke.Enabled`
+- <span class="type type-bool">bool</span> `Face.Blinking`
+- <span class="type type-bool">bool</span> `FT.LongTongue`
+- <span class="type type-byte">byte</span> `HandGestures.Fingers.Left`
+- <span class="type type-byte">byte</span> `HandGestures.Fingers.Right`
+- <span class="type type-int">int</span> `HandGestures.Gesture.Left`
+- <span class="type type-int">int</span> `HandGestures.Gesture.Right`
+- <span class="type type-bool">bool</span> `Headpats.Enabled`
+- <span class="type type-bool">bool</span> `Headpats.LocalTrigger`
+- <span class="type type-bool">bool</span> `Headpats.Sound.Enabled`
+- <span class="type type-bool">bool</span> `Headpats.Trigger`
+- <span class="type type-float">float?</span> `LocomotionAnimationFeetMetrics.FootHeight`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Body`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Body.Away`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Eyes`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Fur`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.LenseCap`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Misc`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.TailMaw`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.TailMaw.Away`
+- <span class="type type-int">int</span> `Mawlamute.EyeType`
+- <span class="type type-bool">bool</span> `Mawlamute.Face.CloseEyes`
+- <span class="type type-float">float</span> `Mawlamute.Shadow.Fade`
+- <span class="type type-float">float3</span> `Mawlamute.Shadow.Slicer.Normal`
+- <span class="type type-float">float3</span> `Mawlamute.Shadow.Slicer.Position`
+- <span class="type type-bool">bool</span> `Mawlamute.Shadow.Toggle`
+- <span class="type type-float">float</span> `Puppet.Ear.Back.L`
+- <span class="type type-float">float</span> `Puppet.Ear.Back.R`
+- <span class="type type-float">float</span> `Puppet.Ear.Deflect.L`
+- <span class="type type-float">float</span> `Puppet.Ear.Deflect.R`
+- <span class="type type-bool">bool</span> `Puppet.Ear.Enabled`
+- <span class="type type-bool">bool</span> `Puppet.Toes.Enabled`
+- <span class="type type-float">float</span> `Puppet.Toes.L`
+- <span class="type type-float">float</span> `Puppet.Toes.R`
+- <span class="type type-float">float</span> `Puppet.Tongue`
+- <span class="type type-float">float</span> `Puppet.Tongue.Slider`
+- <span class="type type-bool">bool</span> `Pyhsics.FloorCollider`
+- <span class="type type-slot">slot</span> `RadialSliderMenu.Root`
+- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.Body`
+- <span class="type type-bool">bool</span> `Renderer.Body.Enabled`
+- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.LightCone`
+- <span class="type type-float">float</span> `Renderer.LightCone.Brightness`
+- <span class="type type-bool">bool</span> `Renderer.LightCone.Enabled`
+- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.TailMaw`
+- <span class="type type-bool">bool</span> `Renderer.TailMaw.Enabled`
+- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.TechTrash`
+- <span class="type type-bool">bool</span> `Renderer.TechTrash.Enabled`
+- <span class="type type-IDynamicBoneCollider">IDynamicBoneCollider</span> `Tail.FloorCollider`
+- <span class="type type-int">int</span> `Tail.Pose`
+- <span class="type type-float">float</span> `Tail.WagSpeed`
+- <span class="type type-bool">bool</span> `TailMaw.Bite`
+- <span class="type type-bool">bool</span> `TailMaw.Bite.Interactions`
+- <span class="type type-bool">bool</span> `Tailmaw.BreathFX`
+- <span class="type type-bool">bool</span> `Tailmaw.Drool`
+- <span class="type type-bool">bool</span> `Tailmaw.Expressions`
+- <span class="type type-bool">bool</span> `Tailmaw.FaceTracking`
+- <span class="type type-bool">bool</span> `Tailmaw.Gestures.JawOpen`
+- <span class="type type-bool">bool</span> `Tailmaw.Gestures.TongueOut`
+- <span class="type type-bool">bool</span> `TailMaw.HeadPat`
+- <span class="type type-bool">bool</span> `Tailmaw.HeadTracking`
+- <span class="type type-bool">bool</span> `Tailmaw.IdleAnimations`
+- <span class="type type-int">int</span> `TailMaw.InteractionAnimation`
+- <span class="type type-bool">bool</span> `TailMaw.Interactions`
+- <span class="type type-int">int</span> `TailMaw.InteractionState`
+- <span class="type type-bool">bool</span> `Tailmaw.JawOpen`
+- <span class="type type-int">int</span> `TailMaw.Mood`
+- <span class="type type-bool">bool</span> `Tailmaw.Mute`
+- <span class="type type-bool">bool</span> `Tailmaw.TongueOut`
+- <span class="type type-bool">bool</span> `Tailmaw.Visemes`
 
 <style>
   .type {
@@ -230,4 +249,9 @@ Only a subset of Blendshapes are available as dynamic variables. The rest can be
   .type-string { --type-color: 0, 77%; }
   .type-int { --type-color: 120, 100%; }
   .type-colorX { --type-color: 30, 100%; }
+  .type-slot { --type-color: 90, 100%; }
+  .type-IAssetProvider_1 { --type-color: 284, 48%; }
+  .type-byte { --type-color: 150, 100%; }
+  .type-IDynamicBoneCollider { --type-color: 283, 44%; }
+  .type-SkinnedMeshRenderer { --type-color: 310, 100%; }
 </style>
