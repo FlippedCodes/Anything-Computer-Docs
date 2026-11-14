@@ -128,6 +128,11 @@ These blendshapes trigger custom effects on the avatar. These variables are only
 
 Only a subset of Blendshapes are available as dynamic variables. The rest can be either reserved or baked for performance. Keep in mind that some may be used in the future for clothes compatibility.
 
+## TEMP LIST
+
+> [!Note]
+> This list will be ordered into categories later. It is also still missing the write back (`◂`) notice.
+
 - <span class="type type-bool">bool</span> `CheekSquish.Enabled`
 - <span class="type type-bool">bool</span> `Clothing.TechTrash.Boots`
 - <span class="type type-string">string</span> `Clothing.TechTrash.Boots`
