@@ -90,8 +90,6 @@ Most expression and personalization functionality is self-contained in the Core 
 
 ### Non-Standardized variables
 
-To overwrite an eye to open in the EyeManager, use the following variables. Using these instead of Blendshapes fixes for "double blinking" where multiple eyes closed blendshapes are active at once.
-
 
 ### Avatar Specific Variables
 
