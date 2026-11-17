@@ -84,7 +84,7 @@ The Mawlamute Core add-on comes pre-installed with the avatar and is fully custo
 
 ## Technical Documentation
 
-This avatar follows the [Avatar Standard](https://wiki.resonite.com/Avatar_standard) (up to spec as of January 2026).
+This avatar follows the [Avatar Standard](https://wiki.resonite.com/Avatar_standard) (up to spec as of November 2026).
 
 Most expression and personalization functionality is self-contained in the Core Add-On. It is possible to uninstall and re-install this system at any time. The avatar contains several DynamicValueVariableDrivers that listen to values set by this module.
 
