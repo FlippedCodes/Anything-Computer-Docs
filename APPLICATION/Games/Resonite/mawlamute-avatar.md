@@ -88,134 +88,31 @@ This avatar follows the [Avatar Standard](https://wiki.resonite.com/Avatar_stand
 
 Most expression and personalization functionality is self-contained in the Core Add-On. It is possible to uninstall and re-install this system at any time. The avatar contains several DynamicValueVariableDrivers that listen to values set by this module.
 
-### Non-Standardized variables
-
-
-### Avatar Specific Variables
-
-These blendshapes trigger custom effects on the avatar. These variables are only provided by the core addon. However, variables marked with `◂` are listened to as drivers.
-
-#### Tail
-
-
-#### Toes
-
-
-#### Ears
-
-
-#### Headpats
-
-
-#### Eyes
-
-
-#### Expressions
-
-
-#### Tongue
-
-
-#### Body
-
-
-#### Clothing
-
-
 ### Blendshapes
 
 Only a subset of Blendshapes are available as dynamic variables. The rest can be either reserved or baked for performance. Keep in mind that some may be used in the future for clothes compatibility.
 
-## TEMP LIST
+### Non-Standardized variables
+
+These blendshapes trigger custom effects on the avatar. These variables are only provided by the core addon. However, variables marked with `◂` are listened to as drivers.
 
 > [!Note]
-> This list will be ordered into categories later. It is also still missing the write back (`◂`) notice.
+> Write backs are not yet documented
 
-- <span class="type type-bool">bool</span> `CheekSquish.Enabled`
-- <span class="type type-bool">bool</span> `Clothing.TechTrash.Boots`
-- <span class="type type-string">string</span> `Clothing.TechTrash.Boots`
-- <span class="type type-bool">bool</span> `Clothing.TechTrash.Jacket`
-- <span class="type type-string">string</span> `Clothing.TechTrash.Jacket`
-- <span class="type type-bool">bool</span> `Clothing.TechTrash.Leggings`
-- <span class="type type-string">string</span> `Clothing.TechTrash.Leggings`
-- <span class="type type-bool">bool</span> `Clothing.TechTrash.Shorts`
-- <span class="type type-string">string</span> `Clothing.TechTrash.Shorts`
-- <span class="type type-bool">bool</span> `Clothing.TechTrash.Stockings`
-- <span class="type type-string">string</span> `Clothing.TechTrash.Stockings`
-- <span class="type type-bool">bool</span> `Clothing.TechTrash.Undershirt`
-- <span class="type type-string">string</span> `Clothing.TechTrash.Undershirt`
-- <span class="type type-bool">bool</span> `DynamicBoneChain.Breasts.Enabled`
-- <span class="type type-bool">bool</span> `DynamicBoneChain.Butt.Enabled`
-- <span class="type type-bool">bool</span> `DynamicBoneChain.Toes.Enabled`
-- <span class="type type-bool">bool</span> `DynamicBoneChain.Tummy.Enabled`
-- <span class="type type-float">float</span> `Emote.Ear.Back.L`
-- <span class="type type-float">float</span> `Emote.Ear.Back.R`
-- <span class="type type-float">float</span> `Emote.Ear.Deflect.L`
-- <span class="type type-float">float</span> `Emote.Ear.Deflect.R`
-- <span class="type type-float">float</span> `Emote.Tongue`
-- <span class="type type-bool">bool</span> `Expression.Active`
-- <span class="type type-float">float?</span> `Expression.LightconeTarget`
-- <span class="type type-bool">bool</span> `Expressions.DoOpenHandExpressions`
-- <span class="type type-bool">bool</span> `Expressions.Eyes.Enable`
-- <span class="type type-bool">bool</span> `Expressions.Eyes.Lock`
-- <span class="type type-bool">bool</span> `Expressions.Mouth.DoOpenHandExpressions`
-- <span class="type type-bool">bool</span> `Expressions.Mouth.Enable`
-- <span class="type type-bool">bool</span> `Expressions.Mouth.Lock`
-- <span class="type type-bool">bool</span> `EyeManager.DisableBlinking`
-- <span class="type type-float">float</span> `EyeManager.EyeCloseOverride.Left`
-- <span class="type type-float">float</span> `EyeManager.EyeCloseOverride.Right`
-- <span class="type type-float">float</span> `EyeManager.EyesClosed.Left.Result`
-- <span class="type type-float">float</span> `EyeManager.EyesClosed.Right.Result`
-- <span class="type type-bool">bool</span> `EyePoke.Enabled`
-- <span class="type type-bool">bool</span> `Face.Blinking`
-- <span class="type type-bool">bool</span> `FT.LongTongue`
-- <span class="type type-byte">byte</span> `HandGestures.Fingers.Left`
-- <span class="type type-byte">byte</span> `HandGestures.Fingers.Right`
-- <span class="type type-int">int</span> `HandGestures.Gesture.Left`
-- <span class="type type-int">int</span> `HandGestures.Gesture.Right`
-- <span class="type type-bool">bool</span> `Headpats.Enabled`
-- <span class="type type-bool">bool</span> `Headpats.LocalTrigger`
-- <span class="type type-bool">bool</span> `Headpats.Sound.Enabled`
-- <span class="type type-bool">bool</span> `Headpats.Trigger`
-- <span class="type type-float">float?</span> `LocomotionAnimationFeetMetrics.FootHeight`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Body`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Body.Away`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Eyes`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Fur`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.LenseCap`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Misc`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.TailMaw`
-- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.TailMaw.Away`
-- <span class="type type-int">int</span> `Mawlamute.EyeType`
-- <span class="type type-bool">bool</span> `Mawlamute.Face.CloseEyes`
-- <span class="type type-float">float</span> `Mawlamute.Shadow.Fade`
-- <span class="type type-float">float3</span> `Mawlamute.Shadow.Slicer.Normal`
-- <span class="type type-float">float3</span> `Mawlamute.Shadow.Slicer.Position`
-- <span class="type type-bool">bool</span> `Mawlamute.Shadow.Toggle`
-- <span class="type type-float">float</span> `Puppet.Ear.Back.L`
-- <span class="type type-float">float</span> `Puppet.Ear.Back.R`
-- <span class="type type-float">float</span> `Puppet.Ear.Deflect.L`
-- <span class="type type-float">float</span> `Puppet.Ear.Deflect.R`
-- <span class="type type-bool">bool</span> `Puppet.Ear.Enabled`
-- <span class="type type-bool">bool</span> `Puppet.Toes.Enabled`
-- <span class="type type-float">float</span> `Puppet.Toes.L`
-- <span class="type type-float">float</span> `Puppet.Toes.R`
-- <span class="type type-float">float</span> `Puppet.Tongue`
-- <span class="type type-float">float</span> `Puppet.Tongue.Slider`
+#### Tail
+
+
+##### Default Tail
+
 - <span class="type type-bool">bool</span> `Pyhsics.FloorCollider`
-- <span class="type type-slot">slot</span> `RadialSliderMenu.Root`
-- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.Body`
-- <span class="type type-bool">bool</span> `Renderer.Body.Enabled`
-- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.LightCone`
-- <span class="type type-float">float</span> `Renderer.LightCone.Brightness`
-- <span class="type type-bool">bool</span> `Renderer.LightCone.Enabled`
-- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.TailMaw`
-- <span class="type type-bool">bool</span> `Renderer.TailMaw.Enabled`
-- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.TechTrash`
-- <span class="type type-bool">bool</span> `Renderer.TechTrash.Enabled`
 - <span class="type type-IDynamicBoneCollider">IDynamicBoneCollider</span> `Tail.FloorCollider`
 - <span class="type type-int">int</span> `Tail.Pose`
 - <span class="type type-float">float</span> `Tail.WagSpeed`
+
+##### Tailmaw
+
+- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.TailMaw`
+- <span class="type type-bool">bool</span> `Renderer.TailMaw.Enabled`
 - <span class="type type-bool">bool</span> `TailMaw.Bite`
 - <span class="type type-bool">bool</span> `TailMaw.Bite.Interactions`
 - <span class="type type-bool">bool</span> `Tailmaw.BreathFX`
@@ -235,6 +132,145 @@ Only a subset of Blendshapes are available as dynamic variables. The rest can be
 - <span class="type type-bool">bool</span> `Tailmaw.Mute`
 - <span class="type type-bool">bool</span> `Tailmaw.TongueOut`
 - <span class="type type-bool">bool</span> `Tailmaw.Visemes`
+
+#### Eyes
+
+- <span class="type type-bool">bool</span> `Face.Blinking`
+
+- <span class="type type-int">int</span> `Mawlamute.EyeType`
+- <span class="type type-bool">bool</span> `Mawlamute.Face.CloseEyes`
+
+
+- <span class="type type-bool">bool</span> `EyeManager.DisableBlinking`
+- <span class="type type-float">float</span> `EyeManager.EyeCloseOverride.Left`
+- <span class="type type-float">float</span> `EyeManager.EyeCloseOverride.Right`
+- <span class="type type-float">float</span> `EyeManager.EyesClosed.Left.Result`
+- <span class="type type-float">float</span> `EyeManager.EyesClosed.Right.Result`
+
+#### Expressions
+
+- <span class="type type-bool">bool</span> `Expression.Active`
+- <span class="type type-float">float?</span> `Expression.LightconeTarget`
+- <span class="type type-bool">bool</span> `Expressions.DoOpenHandExpressions`
+- <span class="type type-bool">bool</span> `Expressions.Eyes.Enable`
+- <span class="type type-bool">bool</span> `Expressions.Eyes.Lock`
+- <span class="type type-bool">bool</span> `Expressions.Mouth.DoOpenHandExpressions`
+- <span class="type type-bool">bool</span> `Expressions.Mouth.Enable`
+- <span class="type type-bool">bool</span> `Expressions.Mouth.Lock`
+
+
+- <span class="type type-float">float</span> `Emote.Ear.Back.L`
+- <span class="type type-float">float</span> `Emote.Ear.Back.R`
+- <span class="type type-float">float</span> `Emote.Ear.Deflect.L`
+- <span class="type type-float">float</span> `Emote.Ear.Deflect.R`
+- <span class="type type-float">float</span> `Emote.Tongue`
+
+
+- <span class="type type-byte">byte</span> `HandGestures.Fingers.Left`
+- <span class="type type-byte">byte</span> `HandGestures.Fingers.Right`
+- <span class="type type-int">int</span> `HandGestures.Gesture.Left`
+- <span class="type type-int">int</span> `HandGestures.Gesture.Right`
+
+
+- <span class="type type-bool">bool</span> `Mawlamute.Shadow.Toggle`
+- <span class="type type-float">float</span> `Mawlamute.Shadow.Fade`
+- <span class="type type-float">float3</span> `Mawlamute.Shadow.Slicer.Normal`
+- <span class="type type-float">float3</span> `Mawlamute.Shadow.Slicer.Position`
+
+
+- <span class="type type-bool">bool</span> `Renderer.LightCone.Enabled`
+- <span class="type type-float">float</span> `Renderer.LightCone.Brightness`
+- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.LightCone`
+
+#### Interactions
+
+- <span class="type type-bool">bool</span> `EyePoke.Enabled`
+- <span class="type type-bool">bool</span> `CheekSquish.Enabled`
+
+
+- <span class="type type-bool">bool</span> `Headpats.Enabled`
+- <span class="type type-bool">bool</span> `Headpats.LocalTrigger`
+- <span class="type type-bool">bool</span> `Headpats.Sound.Enabled`
+- <span class="type type-bool">bool</span> `Headpats.Trigger`
+
+#### Tongue
+
+- <span class="type type-bool">bool</span> `FT.LongTongue`
+
+#### Body
+
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Breasts.Enabled`
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Butt.Enabled`
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Toes.Enabled`
+- <span class="type type-bool">bool</span> `DynamicBoneChain.Tummy.Enabled`
+
+#### Clothing
+
+- <span class="type type-float">float?</span> `LocomotionAnimationFeetMetrics.FootHeight`
+
+##### TechTrash
+
+- <span class="type type-SkinnedMeshRenderer">SkinnedMeshRenderer</span> `Renderer.TechTrash`
+- <span class="type type-bool">bool</span> `Renderer.TechTrash.Enabled`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Boots`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Boots`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Jacket`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Jacket`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Leggings`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Leggings`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Shorts`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Shorts`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Stockings`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Stockings`
+- <span class="type type-bool">bool</span> `Clothing.TechTrash.Undershirt`
+- <span class="type type-string">string</span> `Clothing.TechTrash.Undershirt
+
+#### Puppeting
+
+- <span class="type type-float">float</span> `Puppet.Ear.Back.L`
+- <span class="type type-float">float</span> `Puppet.Ear.Back.R`
+- <span class="type type-float">float</span> `Puppet.Ear.Deflect.L`
+- <span class="type type-float">float</span> `Puppet.Ear.Deflect.R`
+- <span class="type type-bool">bool</span> `Puppet.Ear.Enabled`
+- <span class="type type-bool">bool</span> `Puppet.Toes.Enabled`
+- <span class="type type-float">float</span> `Puppet.Toes.L`
+- <span class="type type-float">float</span> `Puppet.Toes.R`
+- <span class="type type-float">float</span> `Puppet.Tongue`
+- <span class="type type-float">float</span> `Puppet.Tongue.Slider`
+
+<!-- panels:start -->
+
+<!-- div:title-panel -->
+
+#### Materials
+
+<!-- div:right-panel -->
+
+> [!Note]
+> Materials are technically standard-variables maned, but are included anyways.
+
+<!-- div:left-panel -->
+
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Body`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Body.Away`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Eyes`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Fur`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.LenseCap`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.Misc`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.TailMaw`
+- <span class="type type-IAssetProvider_1">IAssetProvider\`1[Material]</span> `Material.TailMaw.Away`
+
+<!-- panels:end -->
+
+#### Custom Systems
+
+- <span class="type type-slot">slot</span> `RadialSliderMenu.Root`
+
+<!--
+#### Toes
+#### Ears
+#### Headpats
+-->
 
 <style>
   .type {
